@@ -1,0 +1,43 @@
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm mod10_counter_top_tb.clk mod10_counter_top_tb.count_async mod10_counter_top_tb.count_sync mod10_counter_top_tb.reset_async mod10_counter_top_tb.reset_sync
+Created probe 1
+ncsim> run
+===================================================
+DAY 10 - SYNCHRONOUS & ASYNCHRONOUS MOD-10 COUNTER
+===================================================
+Time=0 | CLK=0 | reset_async=1|reset_sync=1 | count_sync= x  | count_async= 0
+Time=5 | CLK=1 | reset_async=1|reset_sync=1 | count_sync= 0  | count_async= 0
+Time=10 | CLK=0 | reset_async=1|reset_sync=1 | count_sync= 0  | count_async= 0
+Time=12 | CLK=0 | reset_async=0|reset_sync=0 | count_sync= 0  | count_async= 0
+Time=15 | CLK=1 | reset_async=0|reset_sync=0 | count_sync= 1  | count_async= 1
+Time=20 | CLK=0 | reset_async=0|reset_sync=0 | count_sync= 1  | count_async= 1
+Time=25 | CLK=1 | reset_async=0|reset_sync=0 | count_sync= 2  | count_async= 2
+Time=30 | CLK=0 | reset_async=0|reset_sync=0 | count_sync= 2  | count_async= 2
+Time=35 | CLK=1 | reset_async=0|reset_sync=0 | count_sync= 3  | count_async= 3
+Time=40 | CLK=0 | reset_async=0|reset_sync=0 | count_sync= 3  | count_async= 3
+Time=45 | CLK=1 | reset_async=0|reset_sync=0 | count_sync= 4  | count_async= 4
+Time=50 | CLK=0 | reset_async=0|reset_sync=0 | count_sync= 4  | count_async= 4
+Time=55 | CLK=1 | reset_async=0|reset_sync=0 | count_sync= 5  | count_async= 5
+Time=60 | CLK=0 | reset_async=0|reset_sync=0 | count_sync= 5  | count_async= 5
+Time=65 | CLK=1 | reset_async=0|reset_sync=0 | count_sync= 6  | count_async= 6
+Time=70 | CLK=0 | reset_async=0|reset_sync=0 | count_sync= 6  | count_async= 6
+Time=75 | CLK=1 | reset_async=0|reset_sync=0 | count_sync= 7  | count_async= 7
+Time=80 | CLK=0 | reset_async=0|reset_sync=0 | count_sync= 7  | count_async= 7
+Time=85 | CLK=1 | reset_async=0|reset_sync=1 | count_sync= 8  | count_async= 0
+Time=87 | CLK=1 | reset_async=0|reset_sync=0 | count_sync= 8  | count_async= 0
+Time=90 | CLK=0 | reset_async=0|reset_sync=0 | count_sync= 8  | count_async= 0
+Time=95 | CLK=1 | reset_async=0|reset_sync=0 | count_sync= 9  | count_async= 1
+Time=100 | CLK=0 | reset_async=0|reset_sync=0 | count_sync= 9  | count_async= 1
+Time=105 | CLK=1 | reset_async=0|reset_sync=0 | count_sync= 0  | count_async= 2
+Time=110 | CLK=0 | reset_async=0|reset_sync=0 | count_sync= 0  | count_async= 2
+Time=112 | CLK=0 | reset_async=1|reset_sync=0 | count_sync= 0  | count_async= 2
+Time=115 | CLK=1 | reset_async=1|reset_sync=0 | count_sync= 0  | count_async= 3
+Time=120 | CLK=0 | reset_async=0|reset_sync=0 | count_sync= 0  | count_async= 3
+Time=125 | CLK=1 | reset_async=0|reset_sync=0 | count_sync= 1  | count_async= 4
+Time=130 | CLK=0 | reset_async=0|reset_sync=0 | count_sync= 1  | count_async= 4
+Time=135 | CLK=1 | reset_async=0|reset_sync=0 | count_sync= 2  | count_async= 5
+Simulation complete via $finish(1) at time 137 NS + 0
+./day10_tb.v:114     $finish;
+ncsim> 
