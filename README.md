@@ -1,22 +1,10 @@
-# Day 10 --- MOD-10 Counter: Synchronous and Asynchronous Reset
+# Day 10 -- MOD-10 Counter: Synchronous and Asynchronous Reset
 
-```{=html}
-<p align="center">
-```
-`<b>`{=html}Digital VLSI • Verilog RTL • Sequential Logic • Functional
-Verification • Cadence Genus`</b>`{=html}
-```{=html}
-</p>
-```
-```{=html}
-<p align="center">
-```
-`<code>`{=html}Specification → Architecture → RTL → Verification →
-Synthesis → Technology Mapping → Area → Power → Timing →
-PPA`</code>`{=html}
-```{=html}
-</p>
-```
+![Verilog](https://img.shields.io/badge/HDL-Verilog-blue)
+![Domain](https://img.shields.io/badge/Domain-Digital%20VLSI-orange) 
+![Design](https://img.shields.io/badge/Design-4--bit%20Adder%2FSubtractor-green)
+![Tool](https://img.shields.io/badge/Synthesis-Cadence%20Genus-red)
+
 
 ------------------------------------------------------------------------
 
@@ -64,23 +52,22 @@ PPA`</code>`{=html}
 
 ------------------------------------------------------------------------
 
-## 2. Project Overview
+### 2. Project Overview
 
-A **MOD-10 counter** is a sequential circuit that cycles through ten
-states, from decimal 0 to decimal 9, and then returns to 0.
+This project implements and analyzes a MOD-10 counter using Verilog HDL.
 
-This project contains two implementations:
+The counter is intended to cycle through ten states, from decimal 0 to decimal 9, and then return to 0.
 
--   `ASYNC_COUNTER` --- a counter with asynchronous reset.
--   `SYNC_COUNTER` --- a counter with synchronous reset.
+The design contains two implementations:
 
-Both implementations are instantiated under `mod10_counter_top`,
-allowing their hierarchy and synthesis results to be examined in the
-same top-level design.
+ASYNC_COUNTER → Counter with asynchronous reset
+SYNC_COUNTER → Counter with synchronous reset
 
-The project focuses on the RTL-to-gate-level flow using Cadence Genus,
-including standard-cell mapping, area analysis, power analysis, and
-timing-report interpretation.
+The project was analyzed using Cadence Genus, covering the synthesis flow:
+
+Specification → RTL Design → Testbench → Simulation → Synthesis → Hierarchy → Standard-Cell Mapping → Area → Power → Timing Analysis
+
+Synthesis results: 38 cell instances, total reported area of 871.517, total reported power of 69.1872 µW, and one reported reset-related setup check with +7.556 ns slack.
 
 ------------------------------------------------------------------------
 
