@@ -10,39 +10,21 @@
 
 ## 1. Project Information
 
-  -----------------------------------------------------------------------
-  Parameter                           Details
-  ----------------------------------- -----------------------------------
-  **Project**                         Day 10 --- MOD-10 Counter
-
-  **Domain**                          Digital VLSI / RTL Design
-
-  **Design Type**                     Sequential Logic / Counter
-
-  **HDL**                             Verilog HDL
-
-  **Target Technology**               TSMC 180 nm (as identified by the
-                                      supplied synthesis library name)
-
-  **Library**                         `tsmc18`
-
-  **Synthesis Tool**                  Cadence Genus 21.14-s082_1
-
-  **Operating Condition**             `slow (balanced_tree)`
-
-  **Wireload Mode**                   `enclosed`
-
-  **Top Module**                      `mod10_counter_top`
-
-  **Implementations**                 `mod10_counter_async`,
-                                      `mod10_counter_sync`
-
-  **Analysis Available**              Hierarchy, cell mapping, area,
-                                      power, one setup-timing path
-
-  **Status**                          Synthesis reports available;
-                                      functional simulation evidence not
-                                      supplied
+| Parameter | Details |
+|:---|:---|
+| **Project** | Day 10 — MOD-10 Counter |
+| **Domain** | Digital VLSI / RTL Design |
+| **Design Type** | Sequential Logic / Counter |
+| **HDL** | Verilog HDL |
+| **Target Technology** | TSMC 180 nm (as identified by the supplied synthesis library name) |
+| **Library** | `tsmc18` |
+| **Synthesis Tool** | Cadence Genus 21.14-s082_1 |
+| **Operating Condition** | `slow (balanced_tree)` |
+| **Wireload Mode** | `enclosed` |
+| **Top Module** | `mod10_counter_top` |
+| **Implementations** | `mod10_counter_async`, `mod10_counter_sync` |
+| **Analysis Available** | Hierarchy, cell mapping, area, power, one setup-timing path |
+| **Status** | Synthesis reports available; functional simulation evidence not supplied |
   -----------------------------------------------------------------------
 
 > **Evidence note:** This README records the reports supplied for this
